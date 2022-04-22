@@ -6,6 +6,12 @@
  * @author Michael Ching
  *
  */
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.safari.*;
+import org.openqa.selenium.safari.SafariDriver;
+
 public class PandaAuto
 {
 
@@ -14,8 +20,17 @@ public class PandaAuto
 	 */
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
-
+	
+		
+		//WebDriver driver = new SafariDriver(); 
+		SafariOptions options = new SafariOptions();
+		WebDriver  driver = new SafariDriver(options);
+		  
+	
+		driver.get("https://www.pandaguestexperience.com/Index.aspx?POSType=SmartCode");
+		driver.quit();
+		
+		
 	}
 
 }
