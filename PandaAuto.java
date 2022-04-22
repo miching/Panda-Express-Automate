@@ -7,8 +7,9 @@
  *
  */
 
+import java.time.Duration;
+
 import org.openqa.selenium.*;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.safari.*;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -28,6 +29,10 @@ public class PandaAuto
 		  
 	
 		driver.get("https://www.pandaguestexperience.com/Index.aspx?POSType=SmartCode");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		driver.findElement(By.name("CN1")).sendKeys("test");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		
 		driver.quit();
 		
 		
