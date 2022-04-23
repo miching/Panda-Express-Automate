@@ -158,9 +158,65 @@ public class PandaAuto
 		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000073"), "Recommend this "));
 		
 		
-		//Question: Did you have a problem during your experience?
-				driver.findElement(By.id("R000069.2")).click();
-				wait.until(ExpectedConditions.elementToBeSelected(By.id("R000069.2")));
+		//Question: Recommend this Panda Express to others in the next 30 days?
+		driver.findElement(By.id("R000073.5")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000073.5")));
+		
+		
+		//Question: Return to this Panda Express in the next 30 days?
+		driver.findElement(By.id("R000072.5")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000072.5")));
+		
+		
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+							
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textS000077"), "Please tell us in three or more sentences"));
+		
+		driver.findElement(By.id("gauge_S000077")).sendKeys("I like pandas!");
+		
+		
+		
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+									
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000078"), "Please rate your satisfaction with the changes this \n" + 
+				"        Panda Express location has made in response to the current health crisis."));
+		
+		//Question: "Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis."
+		driver.findElement(By.id("R000078.5")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000078.5")));
+		
+		
+		
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+											
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000466"), "How likely is it that you will enter the"));
+		
+		
+		//Question: How likely is it that you will enter the "Embrace Your Inner Panda" Sweepstakes?
+		driver.findElement(By.id("R000466")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000466")));
+		
+		
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+													
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textBlock2250"), "These final questions are for classification purposes only"));
+	
+		 
+				
+		
+       
 			
 			
 			
