@@ -13,6 +13,8 @@ import java.util.Scanner;
 import org.openqa.selenium.*;
 import org.openqa.selenium.safari.*;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PandaAuto
 {
@@ -51,10 +53,24 @@ public class PandaAuto
 		driver.findElement(By.name("CN4")).sendKeys(code.substring(12, 16));
 		driver.findElement(By.name("CN5")).sendKeys(code.substring(16, 20));
 		driver.findElement(By.name("CN6")).sendKeys(code.substring(20, 22));
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
+		
+		WebDriverWait wt = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wt.until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
+		
+		//Boolean firstResult = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
+		
+		/*
+		new WebDriverWait(driver, Duration.ofSeconds(10));
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		*/
 		driver.findElement(By.id("NextButton")).click();
 		
-		//driver.quit();
+		driver.quit();
 		
 		
 	}
