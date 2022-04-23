@@ -82,38 +82,95 @@ public class PandaAuto
 		
 		
 		//Question: The speed of service
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000015.1")));
 		driver.findElement(By.id("R000015.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000015.1")));
 		
 		
 		//Question:The availability of menu items.
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000012.1")));
 		driver.findElement(By.id("R000012.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000012.1")));
+
 		
-		//Question: The portion size you received.  
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
+		//Question: The portion size you received. 
 		driver.findElement(By.id("R000011.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
+		
 		 
 		//Question: The taste of your food.
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
 		driver.findElement(By.id("R000008.1")).click();
-		 
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
+		
 		 
 		//Question: The temperature of your food.
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
 		driver.findElement(By.id("R000009.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
+		
 		 
 		//Question: The freshness of your food.
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
 		driver.findElement(By.id("R000212.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
+		
 		 
 		 
 		//Next Page
 		driver.findElement(By.id("NextButton")).click();
 		
 		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000287"), "The visual appeal of your food"));
+		 
 		
+		//Question: The visual appeal of your food
+		driver.findElement(By.id("R000287.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000287.1")));
+		
+		
+		//Question: The accuracy of your order.
+		driver.findElement(By.id("R000010.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000010.1")));
+		 
+		
+		//Question: The preparation of your food.
+		driver.findElement(By.id("R000286.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000286.1")));
+		 
+		
+		//Question: The overall value for the price you paid.
+		driver.findElement(By.id("R000021.1")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000021.1")));
+		 
+		 
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+			
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000069"), "Did you have a problem during your experience?"));
+		
+			
+		//Question: Did you have a problem during your experience?
+		driver.findElement(By.id("R000069.2")).click();
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000069.2")));
+			
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+					
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000073"), "Recommend this "));
+		
+		
+		//Question: Did you have a problem during your experience?
+				driver.findElement(By.id("R000069.2")).click();
+				wait.until(ExpectedConditions.elementToBeSelected(By.id("R000069.2")));
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		//driver.quit();
 		
 		
