@@ -41,12 +41,11 @@ public class PandaAuto
 		
 		
 		WebDriver driver = new SafariDriver(); 
-		//SafariOptions options = new SafariOptions();
-		//WebDriver  driver = new SafariDriver(options);
 		  
-	
+		//Open Panda Express Survey URL
 		driver.get("https://www.pandaguestexperience.com/Index.aspx?POSType=SmartCode");
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		
+		//Enter code values into proper elements
 		driver.findElement(By.name("CN1")).sendKeys(code.substring(0, 4));
 		driver.findElement(By.name("CN2")).sendKeys(code.substring(4, 8));
 		driver.findElement(By.name("CN3")).sendKeys(code.substring(8, 12));
@@ -54,10 +53,10 @@ public class PandaAuto
 		driver.findElement(By.name("CN5")).sendKeys(code.substring(16, 20));
 		driver.findElement(By.name("CN6")).sendKeys(code.substring(20, 22));
 		
-		WebDriverWait wt = new WebDriverWait(driver,Duration.ofSeconds(10));
-		wt.until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
+		//Add explicit wait condition for all values to be entered in
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
 		
-		//Boolean firstResult = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
 		
 		/*
 		new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -68,6 +67,8 @@ public class PandaAuto
 			e.printStackTrace();
 		}
 		*/
+		
+		//Next Page
 		driver.findElement(By.id("NextButton")).click();
 		
 		driver.quit();
