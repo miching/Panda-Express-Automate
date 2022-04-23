@@ -58,10 +58,10 @@ public class PandaAuto
 		wait.until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
 		
 		
+		
 		/*
-		new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(20000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -71,7 +71,50 @@ public class PandaAuto
 		//Next Page
 		driver.findElement(By.id("NextButton")).click();
 		
-		driver.quit();
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
+		
+		//Answer survey question
+		driver.findElement(By.id("R000002.1")).click();
+		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+		
+		
+		//Question: The speed of service
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000015.1")));
+		driver.findElement(By.id("R000015.1")).click();
+		
+		
+		//Question:The availability of menu items.
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000012.1")));
+		driver.findElement(By.id("R000012.1")).click();
+		
+		//Question: The portion size you received.  
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
+		driver.findElement(By.id("R000011.1")).click();
+		 
+		//Question: The taste of your food.
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
+		driver.findElement(By.id("R000008.1")).click();
+		 
+		 
+		//Question: The temperature of your food.
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
+		driver.findElement(By.id("R000009.1")).click();
+		 
+		//Question: The freshness of your food.
+		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
+		driver.findElement(By.id("R000212.1")).click();
+		 
+		 
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+		
+		//Check if on next page
+		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
+		
+		//driver.quit();
 		
 		
 	}
