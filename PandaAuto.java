@@ -14,6 +14,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.safari.*;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PandaAuto
@@ -212,21 +213,37 @@ public class PandaAuto
 													
 		//Check if on next page
 		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textBlock2250"), "These final questions are for classification purposes only"));
-	
-		 
+		
+		
+		//Question: Please select your gender
+		Select selectByValue = new Select(driver.findElement(By.id("R000130")));
+		selectByValue.selectByVisibleText("Male");
+		//selectByValue.selectByValue("2");
+		//selectByValue.selectByIndex(2);
+		
+		
+		//Question: Please select your age
+		selectByValue = new Select(driver.findElement(By.id("R000131")));
+		selectByValue.selectByValue("2");
+				
+				
+		//Question: Please select your annual household income:
+		selectByValue = new Select(driver.findElement(By.id("R000132")));
+		selectByValue.selectByValue("9");
 				
 		
-       
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		//Question: Please select which of the following best describes your background
+		selectByValue = new Select(driver.findElement(By.id("R000133")));
+		selectByValue.selectByValue("2");
+		
+		
+		//Next Page
+		//driver.findElement(By.id("NextButton")).click();
+
+		
+		
+		//End of Survey
+		//driver.close();
 		//driver.quit();
 		
 		
