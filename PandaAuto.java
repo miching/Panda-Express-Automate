@@ -43,8 +43,20 @@ public class PandaAuto
 		
 		WebDriver driver = new SafariDriver(); 
 		  
-		//Open Panda Express Survey URL
-		driver.get("https://www.pandaguestexperience.com/Index.aspx?POSType=SmartCode");
+		try 
+		{
+		
+			//Open Panda Express Survey URL
+			driver.get("https://www.pandaguestexperience.com/Index.aspx?POSType=SmartCode");
+			
+		}
+		catch (Exception e)
+		{
+			
+			System.out.println("Error retrieving site");
+			
+		}
+		
 		
 		//Enter code values into proper elements
 		driver.findElement(By.name("CN1")).sendKeys(code.substring(0, 4));
