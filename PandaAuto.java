@@ -88,7 +88,7 @@ public class PandaAuto
 		//wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
 		
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -102,7 +102,7 @@ public class PandaAuto
 		
 		try {
 			
-			Thread.sleep(5000);
+			Thread.sleep(1500);
 			
 		} catch (InterruptedException e) {
 			
@@ -111,141 +111,205 @@ public class PandaAuto
 		}
 		
 		
+		//Answer Questions
 		questionCheck(driver);
 		
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+		
+		//Let page load
+		try {
+			
+			Thread.sleep(1500);
+			
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+				
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+				
+		//Let page load
+		try {
+					
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+					
+			e.printStackTrace();
+					
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+				
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+				
+		//Let page load
+		try {
+			
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+					
+			e.printStackTrace();
+					
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+				
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+				
+		//Let page load
+		try {
+					
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+					
+			e.printStackTrace();
+					
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+				
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+				
+		//Let page load
+		try {
+					
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+					
+			e.printStackTrace();
+					
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+				
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+				
+		//Let page load
+		try {
+					
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+					
+			e.printStackTrace();
+					
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+						
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+						
+		//Let page load
+		try {
+							
+			Thread.sleep(1500);
+							
+		} catch (InterruptedException e) {
+							
+			e.printStackTrace();
+							
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+						
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+						
+		//Let page load
+		try {
+							
+			Thread.sleep(1500);
+							
+		} catch (InterruptedException e) {
+							
+			e.printStackTrace();
+							
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+						
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+						
+		//Let page load
+		try {
+							
+			Thread.sleep(1500);
+					
+		} catch (InterruptedException e) {
+							
+			e.printStackTrace();
+							
+		}
+		
+		System.out.println("End here");
+		
+		//Answer Questions
+		questionCheck(driver);
+						
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+						
+		//Let page load
+		try {
+							
+			Thread.sleep(1500);
+						
+		} catch (InterruptedException e) {
+							
+			e.printStackTrace();
+							
+		}
+		
+		
+		//Answer Questions
+		questionCheck(driver);
+						
+		//Next Page
+		driver.findElement(By.id("NextButton")).click();
+						
+		//Let page load
+		try {
+							
+			Thread.sleep(1500);
+							
+		} catch (InterruptedException e) {
+							
+			e.printStackTrace();
+							
+		}
 		
 	/*
-		//Question:The availability of menu items.
-	//	driver.findElement(By.id("R000012.1")).click();
-	//	driver.findElement(By.xpath("//*[@id=\"FNSR000286\"]/td[1]/span")).click();
-	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000012.1")));
-
-		
-		//Question: The portion size you received. 
-	//	driver.findElement(By.id("R000011.1")).click();
-	//	driver.findElement(By.xpath("//*[@id=\"FNSR000016\"]/td[1]")).click();
-		//wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
-		
-		 
-		//Question: The taste of your food.
-	//	driver.findElement(By.id("R000008.1")).click();
-	//	driver.findElement(By.xpath("//*[@id=\"FNSR000002\"]/td[1]")).click();
-	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
-		
-		 
-		//Question: The temperature of your food.
-	//	driver.findElement(By.id("R000009.1")).click();
-	//	driver.findElement(By.xpath("//*[@id=\"FNSR000002\"]/td[1]")).click();
-	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
-		
-		 
-		//Question: The freshness of your food.
-	//	driver.findElement(By.id("R000212.1")).click();
-		driver.findElement(By.xpath("//*[@id=\"FNSR000212\"]/td[1]")).click();
-	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
-		
-		//Question: Overall cleanliness
-		driver.findElement(By.xpath("//*[@id=\"FNSR000018\"]/td[1]")).click();
-		 
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-		
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000287"), "The visual appeal of your food"));
-		 
-		
-		//Question: The visual appeal of your food
-		driver.findElement(By.id("R000287.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000287.1")));
-		
-		
-		//Question: The accuracy of your order.
-		//driver.findElement(By.id("R000010.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000010.1")));
-		driver.findElement(By.xpath("//*[@id=\"FNSR000010\"]/td[1]")).click();
-		 
-		
-		//Question: The preparation of your food.
-		driver.findElement(By.id("R000286.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000286.1")));
-		 
-		
-		//Question: The overall value for the price you paid.
-		driver.findElement(By.id("R000021.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000021.1")));
-		 
-		 
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-			
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000069"), "Did you have a problem during your experience?"));
-		
-			
-		//Question: Did you have a problem during your experience?
-		driver.findElement(By.id("R000069.2")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000069.2")));
-			
-		
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-					
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000073"), "Recommend this "));
-		
-		
-		//Question: Recommend this Panda Express to others in the next 30 days?
-		driver.findElement(By.id("R000073.5")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000073.5")));
-		
-		
-		//Question: Return to this Panda Express in the next 30 days?
-		driver.findElement(By.id("R000072.5")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000072.5")));
-		
-		
-		
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-							
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textS000077"), "Please tell us in three or more sentences"));
-		
-		driver.findElement(By.id("gauge_S000077")).sendKeys("I like pandas!");
-		
-		
-		
-		
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-									
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000078"), "Please rate your satisfaction with the changes this \n" + 
-				"        Panda Express location has made in response to the current health crisis."));
-		
-		//Question: "Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis."
-		driver.findElement(By.id("R000078.5")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000078.5")));
-		
-		
-		
-		
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-											
-		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000466"), "How likely is it that you will enter the"));
-		
-		
-		//Question: How likely is it that you will enter the "Embrace Your Inner Panda" Sweepstakes?
-		driver.findElement(By.id("R000466")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000466")));
-		
-		
-		
-		//Next Page
-		driver.findElement(By.id("NextButton")).click();
-													
 		//Check if on next page
 		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textBlock2250"), "These final questions are for classification purposes only"));
 		
@@ -482,7 +546,7 @@ public class PandaAuto
 		try {
 			
 			//Question: Including this visit, how many times have you visited Panda Express in the past 30 days?
-			driver.findElement(By.xpath("//*[@id=\"FNSR000086\"]/div/div/div[3]/span/span")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000086\"]/div/div/div[3]")).click();
 			
 		} catch (Exception e) {
 			
