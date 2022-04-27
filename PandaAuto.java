@@ -111,54 +111,9 @@ public class PandaAuto
 		}
 		
 		
+		questionCheck(driver);
 		
 		
-		try {
-			
-			//Question: The speed of service
-			driver.findElement(By.xpath("//*[@id=\"FNSR000015\"]/td[1]")).click();
-			
-		} catch (Exception e) {
-			
-			System.out.println("Speed of Service question not here");
-			
-		}
-		
-		
-		try {
-			
-			//Question: The availability of menu items.
-			driver.findElement(By.xpath("//*[@id=\"FNSR000012\"]/td[1]")).click();
-			
-		} catch (Exception e) {
-			
-			System.out.println("The availability of menu items question not here");
-			
-		}
-		
-		
-		try {
-			
-			//Question: The portion size you received. 
-			driver.findElement(By.xpath("//*[@id=\"FNSR000011\"]/td[1]")).click();
-			
-		} catch (Exception e) {
-			
-			System.out.println("The portion size you received question not here");
-			
-		}
-		
-		
-		try {
-			
-			//Question: The taste of your food. 
-			driver.findElement(By.xpath("//*[@id=\"FNSR000008\"]/td[1]")).click();
-			
-		} catch (Exception e) {
-			
-			System.out.println("The taste of your food question not here");
-			
-		}
 	/*
 		//Question:The availability of menu items.
 	//	driver.findElement(By.id("R000012.1")).click();
@@ -330,9 +285,243 @@ public class PandaAuto
 	}
 	
 	
-	public static void questionCheck()
+	public static void questionCheck(WebDriver driver)
 	{
 		
+		try {
+			
+			//Question: The speed of service
+			driver.findElement(By.xpath("//*[@id=\"FNSR000015\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Speed of Service question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The availability of menu items.
+			driver.findElement(By.xpath("//*[@id=\"FNSR000012\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The availability of menu items question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The portion size you received. 
+			driver.findElement(By.xpath("//*[@id=\"FNSR000011\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The portion size you received question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The taste of your food. 
+			driver.findElement(By.xpath("//*[@id=\"FNSR000008\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The taste of your food question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The temperature of your food.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The temperature of your food question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The freshness of your food.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The freshness of your food question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: Overall cleanliness.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Overall cleanliness question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The visual appeal of your food.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The visual appeal of your food question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The accuracy of your order.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The accuracy of your order question not here");
+			
+		}
+			
+				
+		try {
+			
+			//Question: The preparation of your food.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The preparation of your food question not here");
+			
+		}
+		
+			
+		try {
+			
+			//Question: The overall value for the price you paid.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("The overall value for the price you paid question not here");
+			
+		}
+			
+						 
+		try {
+			
+			//Question: Did you have a problem during your experience?
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Did you have a problem during your experience? question not here");
+			
+		}
+				
+		
+		try {
+			
+			//Question: Recommend this Panda Express to others in the next 30 days?
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Recommend this Panda Express to others in the next 30 days? question not here");
+			
+		}
+			
+		
+		try {
+			
+			//Question: Return to this Panda Express in the next 30 days?
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Return to this Panda Express in the next 30 days? question not here");
+			
+		}
+			
+				
+		try {
+			
+			//Question: User Input
+			driver.findElement(By.id("gauge_S000077")).sendKeys("I like pandas!");
+			
+		} catch (Exception e) {
+			
+			System.out.println("User Input not here");
+			
+		}
+		
+			
+		try {
+			
+			//Question: Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis.
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis question not here");
+			
+		}
+			
+			
+		try {
+			
+			//Question: How likely is it that you will enter the "Embrace Your Inner Panda" Sweepstakes?
+			driver.findElement(By.xpath("")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("How likely is it that you will enter the \"Embrace Your Inner Panda\" Sweepstakes? question not here");
+			
+		}
+			
+		
+		/*	
+			
+			
+			
+			
+			//Question: Please select your gender
+			Select selectByValue = new Select(driver.findElement(By.id("R000130")));
+			selectByValue.selectByVisibleText("Male");
+			//selectByValue.selectByValue("2");
+			//selectByValue.selectByIndex(2);
+			
+			
+			//Question: Please select your age
+			selectByValue = new Select(driver.findElement(By.id("R000131")));
+			selectByValue.selectByValue("2");
+					
+					
+			//Question: Please select your annual household income:
+			selectByValue = new Select(driver.findElement(By.id("R000132")));
+			selectByValue.selectByValue("9");
+					
+			
+			//Question: Please select which of the following best describes your background
+			selectByValue = new Select(driver.findElement(By.id("R000133")));
+			selectByValue.selectByValue("2");
+			
+			
+			//Next Page
+			//driver.findElement(By.id("NextButton")).click();
+	*/	
 		
 		
 	}
