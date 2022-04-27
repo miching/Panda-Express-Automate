@@ -339,7 +339,7 @@ public class PandaAuto
 		try {
 			
 			//Question: The temperature of your food.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000009\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -351,7 +351,7 @@ public class PandaAuto
 		try {
 			
 			//Question: The freshness of your food.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000212\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -363,7 +363,7 @@ public class PandaAuto
 		try {
 			
 			//Question: Overall cleanliness.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000018\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -375,7 +375,7 @@ public class PandaAuto
 		try {
 			
 			//Question: The visual appeal of your food.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000287\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -387,7 +387,7 @@ public class PandaAuto
 		try {
 			
 			//Question: The accuracy of your order.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000010\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -399,7 +399,7 @@ public class PandaAuto
 		try {
 			
 			//Question: The preparation of your food.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000286\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
@@ -411,23 +411,46 @@ public class PandaAuto
 		try {
 			
 			//Question: The overall value for the price you paid.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000021\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
 			System.out.println("The overall value for the price you paid question not here");
 			
 		}
-			
-						 
+		
+		
 		try {
 			
-			//Question: Did you have a problem during your experience?
-			driver.findElement(By.xpath("")).click();
+			//Question: The ease of placing your order.
+			driver.findElement(By.xpath("//*[@id=\"FNSR000013\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
-			System.out.println("Did you have a problem during your experience? question not here");
+			System.out.println("The ease of placing your order question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: The friendliness of the team members.
+			driver.findElement(By.xpath("//*[@id=\"FNSR000016\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("TThe friendliness of the team members question not here");
+			
+		}
+							 
+		try {
+			
+			//Question: Did you have a problem during your experience?
+			driver.findElement(By.xpath("//*[@id=\"FNSR000069\"]/td[2]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Did you have a problem during your experience question not here");
 			
 		}
 				
@@ -435,11 +458,11 @@ public class PandaAuto
 		try {
 			
 			//Question: Recommend this Panda Express to others in the next 30 days?
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000073\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
-			System.out.println("Recommend this Panda Express to others in the next 30 days? question not here");
+			System.out.println("Recommend this Panda Express to others in the next 30 days question not here");
 			
 		}
 			
@@ -447,11 +470,23 @@ public class PandaAuto
 		try {
 			
 			//Question: Return to this Panda Express in the next 30 days?
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000072\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
-			System.out.println("Return to this Panda Express in the next 30 days? question not here");
+			System.out.println("Return to this Panda Express in the next 30 days question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: Including this visit, how many times have you visited Panda Express in the past 30 days?
+			driver.findElement(By.xpath("//*[@id=\"FNSR000086\"]/div/div/div[3]/span/span")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Including this visit, how many times have you visited Panda Express in the past 30 days question not here");
 			
 		}
 			
@@ -471,11 +506,35 @@ public class PandaAuto
 		try {
 			
 			//Question: Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis.
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000078\"]/td[1]")).click();
 			
 		} catch (Exception e) {
 			
 			System.out.println("Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: Please rate your satisfaction with how Panda Express protected your health and safety during your visit.
+			driver.findElement(By.xpath("//*[@id=\"FNSR000381\"]/td[1]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Please rate your satisfaction with how Panda Express protected your health and safety during your visit question not here");
+			
+		}
+		
+		
+		try {
+			
+			//Question: Would you like to recognize an employee by name for going above and beyond to provide exceptional service?
+			driver.findElement(By.xpath("//*[@id=\"FNSR000083\"]/td[2]")).click();
+			
+		} catch (Exception e) {
+			
+			System.out.println("Would you like to recognize an employee by name for going above and beyond to provide exceptional service question not here");
 			
 		}
 			
@@ -483,7 +542,7 @@ public class PandaAuto
 		try {
 			
 			//Question: How likely is it that you will enter the "Embrace Your Inner Panda" Sweepstakes?
-			driver.findElement(By.xpath("")).click();
+			driver.findElement(By.xpath("//*[@id=\"FNSR000466\"]/td[4]")).click();
 			
 		} catch (Exception e) {
 			
