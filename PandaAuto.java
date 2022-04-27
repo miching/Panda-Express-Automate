@@ -85,13 +85,27 @@ public class PandaAuto
 		driver.findElement(By.id("NextButton")).click();
 		
 		//Check if on next page
-		wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
+		//wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		//Answer survey question
-		driver.findElement(By.id("R000002.1")).click();
+		driver.findElement(By.xpath("//*[@id=\"FNSR000002\"]/td[1]")).click();
 		
 		//Next Page
 		driver.findElement(By.id("NextButton")).click();
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		//Question: The speed of service
@@ -106,22 +120,22 @@ public class PandaAuto
 		
 		//Question: The portion size you received. 
 		driver.findElement(By.id("R000011.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
+		//wait.until(ExpectedConditions.elementToBeSelected(By.id("R000011.1")));
 		
 		 
 		//Question: The taste of your food.
 		driver.findElement(By.id("R000008.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
+	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000008.1")));
 		
 		 
 		//Question: The temperature of your food.
 		driver.findElement(By.id("R000009.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
+	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000009.1")));
 		
 		 
 		//Question: The freshness of your food.
 		driver.findElement(By.id("R000212.1")).click();
-		wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
+	//	wait.until(ExpectedConditions.elementToBeSelected(By.id("R000212.1")));
 		
 		 
 		 
