@@ -71,26 +71,17 @@ public class PandaAuto
 		wait.until(ExpectedConditions.textToBePresentInElementValue(By.name("CN6"), code.substring(20, 22)));
 		
 		
-		
-		/*
-		try {
-			Thread.sleep(20000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		*/
-		
 		//Next Page
 		driver.findElement(By.id("NextButton")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		//Check if on next page
-		//wait.until(ExpectedConditions.textToBePresentInElementValue(By.id("textR000002"), "Please rate your overall satisfaction with your"));
 		
 		try {
+			
 			Thread.sleep(1500);
+			
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -99,6 +90,9 @@ public class PandaAuto
 		
 		//Next Page
 		driver.findElement(By.id("NextButton")).click();
+		
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		
 		try {
 			
