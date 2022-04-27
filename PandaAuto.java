@@ -359,7 +359,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Speed of Service question not here");
+			//System.out.println("Speed of Service question not here");
 			
 		}
 		
@@ -371,7 +371,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The availability of menu items question not here");
+			//System.out.println("The availability of menu items question not here");
 			
 		}
 		
@@ -383,7 +383,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The portion size you received question not here");
+			//System.out.println("The portion size you received question not here");
 			
 		}
 		
@@ -395,7 +395,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The taste of your food question not here");
+			//System.out.println("The taste of your food question not here");
 			
 		}
 		
@@ -407,7 +407,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The temperature of your food question not here");
+			//System.out.println("The temperature of your food question not here");
 			
 		}
 		
@@ -419,7 +419,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The freshness of your food question not here");
+			//System.out.println("The freshness of your food question not here");
 			
 		}
 		
@@ -431,7 +431,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Overall cleanliness question not here");
+			//System.out.println("Overall cleanliness question not here");
 			
 		}
 		
@@ -443,7 +443,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The visual appeal of your food question not here");
+			//System.out.println("The visual appeal of your food question not here");
 			
 		}
 		
@@ -455,7 +455,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The accuracy of your order question not here");
+			//System.out.println("The accuracy of your order question not here");
 			
 		}
 			
@@ -467,7 +467,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The preparation of your food question not here");
+			//System.out.println("The preparation of your food question not here");
 			
 		}
 		
@@ -479,7 +479,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The overall value for the price you paid question not here");
+			//System.out.println("The overall value for the price you paid question not here");
 			
 		}
 		
@@ -491,7 +491,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("The ease of placing your order question not here");
+			//System.out.println("The ease of placing your order question not here");
 			
 		}
 		
@@ -503,7 +503,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("TThe friendliness of the team members question not here");
+			//System.out.println("TThe friendliness of the team members question not here");
 			
 		}
 							 
@@ -514,7 +514,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Did you have a problem during your experience question not here");
+			//System.out.println("Did you have a problem during your experience question not here");
 			
 		}
 				
@@ -526,7 +526,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Recommend this Panda Express to others in the next 30 days question not here");
+			//System.out.println("Recommend this Panda Express to others in the next 30 days question not here");
 			
 		}
 			
@@ -538,7 +538,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Return to this Panda Express in the next 30 days question not here");
+			//System.out.println("Return to this Panda Express in the next 30 days question not here");
 			
 		}
 		
@@ -550,7 +550,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Including this visit, how many times have you visited Panda Express in the past 30 days question not here");
+			//System.out.println("Including this visit, how many times have you visited Panda Express in the past 30 days question not here");
 			
 		}
 			
@@ -562,7 +562,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("User Input not here");
+			//System.out.println("User Input not here");
 			
 		}
 		
@@ -574,7 +574,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis question not here");
+			//System.out.println("Please rate your satisfaction with the changes this Panda Express location has made in response to the current health crisis question not here");
 			
 		}
 		
@@ -586,7 +586,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Please rate your satisfaction with how Panda Express protected your health and safety during your visit question not here");
+			//System.out.println("Please rate your satisfaction with how Panda Express protected your health and safety during your visit question not here");
 			
 		}
 		
@@ -598,7 +598,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("Would you like to recognize an employee by name for going above and beyond to provide exceptional service question not here");
+			//System.out.println("Would you like to recognize an employee by name for going above and beyond to provide exceptional service question not here");
 			
 		}
 			
@@ -610,7 +610,7 @@ public class PandaAuto
 			
 		} catch (Exception e) {
 			
-			System.out.println("How likely is it that you will enter the \"Embrace Your Inner Panda\" Sweepstakes? question not here");
+			//System.out.println("How likely is it that you will enter the \"Embrace Your Inner Panda\" Sweepstakes? question not here");
 			
 		}
 			
